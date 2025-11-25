@@ -1,0 +1,28 @@
+camera:
+  device: /dev/video0
+  width: 640
+  height: 480
+  pixel_format: YUYV
+  pass_through: false  
+
+format_converter:
+  in_dtype: rgba8888
+  out_dtype: rgba8888
+
+holoviz:
+  width: 640
+  height: 480
+  window_title: Main Window
+
+holoviz2:
+  width: 640
+  height: 480
+  window_title: Rotated Window
+
+m_scheduler:
+  name: "multithread"
+  worker_thread_number: 2 
+
+rotation_operator:
+  allocator: device_allocator
+  

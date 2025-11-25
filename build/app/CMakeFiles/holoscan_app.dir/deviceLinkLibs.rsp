@@ -1,0 +1,1 @@
+  -L/opt/nvidia/holoscan/lib  -L"/usr/local/cuda/targets/x86_64-linux/lib"   /opt/nvidia/holoscan/lib/libholoscan_gpu_resident_cuda.a -lgxf_app -lgxf_ucx -lgxf_serialization "/opt/nvidia/holoscan/lib/libyaml-cpp.a" -lgxf_rmm -lgxf_cuda -lgxf_multimedia -lgxf_std -lgxf_core -lgxf_logger -lyaml-cpp -ldl "/usr/lib/x86_64-linux-gnu/librt.a" -lcudadevrt -lcudart_static -lrt -lpthread 

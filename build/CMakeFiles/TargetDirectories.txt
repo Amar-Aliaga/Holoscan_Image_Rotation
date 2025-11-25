@@ -1,0 +1,17 @@
+/workspace/build/CMakeFiles/edit_cache.dir
+/workspace/build/CMakeFiles/rebuild_cache.dir
+/workspace/build/operators/rotation_operator/CMakeFiles/rotationOp_lib.dir
+/workspace/build/operators/rotation_operator/CMakeFiles/edit_cache.dir
+/workspace/build/operators/rotation_operator/CMakeFiles/rebuild_cache.dir
+/workspace/build/operators/ping_multiplier_operator/CMakeFiles/pingMxOp_lib.dir
+/workspace/build/operators/ping_multiplier_operator/CMakeFiles/edit_cache.dir
+/workspace/build/operators/ping_multiplier_operator/CMakeFiles/rebuild_cache.dir
+/workspace/build/operators/ping_ops/CMakeFiles/pingOps_lib.dir
+/workspace/build/operators/ping_ops/CMakeFiles/edit_cache.dir
+/workspace/build/operators/ping_ops/CMakeFiles/rebuild_cache.dir
+/workspace/build/operators/test_operator/CMakeFiles/test_lib.dir
+/workspace/build/operators/test_operator/CMakeFiles/edit_cache.dir
+/workspace/build/operators/test_operator/CMakeFiles/rebuild_cache.dir
+/workspace/build/app/CMakeFiles/holoscan_app.dir
+/workspace/build/app/CMakeFiles/edit_cache.dir
+/workspace/build/app/CMakeFiles/rebuild_cache.dir

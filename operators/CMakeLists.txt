@@ -1,0 +1,4 @@
+add_subdirectory(rotation_operator)
+add_subdirectory(ping_multiplier_operator)
+add_subdirectory(ping_ops)
+add_subdirectory(test_operator)
