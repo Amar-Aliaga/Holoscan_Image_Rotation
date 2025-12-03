@@ -1,9 +1,9 @@
-
 #include "rotation_operator.hpp"
 #include "pingMxOp.hpp"
 #include "PingTxOp.hpp"
 #include "PingRxOp.hpp"
 #include "test.hpp"
+#include "edge_detection.hpp"
 
 #include <holoscan/holoscan.hpp>
 #include <holoscan/operators/v4l2_video_capture/v4l2_video_capture.hpp>
@@ -51,25 +51,27 @@ class CameraGPUDisplayApp : public holoscan::Application {
     auto rotate_op = make_operator<RotationOperator>("rotate",
         Arg("allocator") = device_alloc);
 
+    auto edge = make_operator<EdgeDetection>("edge", from_config("binary_mask_value"));
+
     add_flow(camera, format_converter,    {{"signal", "source_video"}});
     add_flow(format_converter, viz,       {{"tensor", "receivers"}});
-    add_flow(format_converter, rotate_op, {{"tensor", "in"}});
-    add_flow(rotate_op, viz2,             {{"out",    "receivers"}});
+    add_flow(format_converter, edge, {{"tensor", "in"}});
+    add_flow(edge, viz2,             {{"out",    "receivers"}});
   }
 };
 
 
 
 class Ping : public holoscan::Application {
-public:
-    void compose() override {
-        auto pingTx = make_operator<holoscan::ops::PingTxOp>("pingTx", make_condition<holoscan::CountCondition>(10));
-        auto pingMx = make_operator<PingMxOp>("pingMx", holoscan::Arg("multiplier", 3));
-        auto pingRx = make_operator<holoscan::ops::PingRxOp>("pingRx");
+    public:
+        void compose() override {
+            auto pingTx = make_operator<holoscan::ops::PingTxOp>("pingTx", make_condition<holoscan::CountCondition>(10));
+            auto pingMx = make_operator<PingMxOp>("pingMx", holoscan::Arg("multiplier", 3));
+            auto pingRx = make_operator<holoscan::ops::PingRxOp>("pingRx");
 
-        add_flow(pingTx, pingMx, {{"out", "in"}});
-        add_flow(pingMx, pingRx, {{"out", "in"}});
-    }
+            add_flow(pingTx, pingMx, {{"out", "in"}});
+            add_flow(pingMx, pingRx, {{"out", "in"}});
+        }
 };
 
 
@@ -84,20 +86,33 @@ class MyOp1 : public holoscan::Application {
 };
 
 
+class Edge : public holoscan::Application {
+    public:
+        void compose() override {
+            auto edge = make_operator<EdgeDetection>("edge", from_config("binary_mask_value"));
+            add_operator(edge);
+        }
+};
+
+
 int main(int argc, char** argv) {
   auto app = holoscan::make_application<CameraGPUDisplayApp>();
   app->config("config/app_config.yaml");  
   app->run();
 
-// SECOND OPERATOR
-//   auto app = holoscan::make_application<Ping>();
-//   app->run();
+//SECOND OPERATOR
+    // auto app = holoscan::make_application<Ping>();
+    // app->run();
 
 
 //THIRD OPERATOR
-
     // auto app = holoscan::make_application<MyOp1>();
     // app->config("operators/test_operator/config.yaml");
+    // app->run();
+
+//FOURTH OPERATOR
+    // auto app = holoscan::make_application<Edge>();
+    // app->config("operators/edge_detection_operator/config.yaml");
     // app->run();
 
   return 0;

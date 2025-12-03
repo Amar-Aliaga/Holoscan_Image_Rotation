@@ -1280,6 +1280,7 @@ app/CMakeFiles/holoscan_app.dir/main.cpp.o: /workspace/app/main.cpp \
   /usr/local/cuda/targets/x86_64-linux/include/vector_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/vector_types.h \
   /workspace/expected/include/tl/expected.hpp \
+  /workspace/operators/edge_detection_operator/include/edge_detection.hpp \
   /workspace/operators/ping_multiplier_operator/include/pingMxOp.hpp \
   /workspace/operators/ping_ops/include/PingRxOp.hpp \
   /workspace/operators/ping_ops/include/PingTxOp.hpp \
@@ -1296,6 +1297,8 @@ app/CMakeFiles/holoscan_app.dir/main.cpp.o: /workspace/app/main.cpp \
 /workspace/operators/ping_ops/include/PingRxOp.hpp:
 
 /workspace/operators/ping_multiplier_operator/include/pingMxOp.hpp:
+
+/workspace/operators/edge_detection_operator/include/edge_detection.hpp:
 
 /usr/local/cuda/targets/x86_64-linux/include/vector_types.h:
 

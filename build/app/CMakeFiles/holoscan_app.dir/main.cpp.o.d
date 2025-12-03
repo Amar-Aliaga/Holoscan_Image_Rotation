@@ -1260,6 +1260,7 @@ app/CMakeFiles/holoscan_app.dir/main.cpp.o: /workspace/app/main.cpp \
  /workspace/operators/ping_ops/include/PingTxOp.hpp \
  /workspace/operators/ping_ops/include/PingRxOp.hpp \
  /workspace/operators/test_operator/include/test.hpp \
+ /workspace/operators/edge_detection_operator/include/edge_detection.hpp \
  /opt/nvidia/holoscan/include/holoscan/operators/v4l2_video_capture/v4l2_video_capture.hpp \
  /usr/include/linux/videodev2.h /usr/include/linux/ioctl.h \
  /usr/include/x86_64-linux-gnu/asm/ioctl.h \

@@ -3,11 +3,15 @@ project(holoscan_app LANGUAGES CXX CUDA)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(OpenCV_DIR /opt/nvidia/opencv CACHE PATH "")
+
+#find_package(OpenCV REQUIRED COMPONENTS core cudaarithm cudaimgproc)
 
 add_subdirectory(operators/rotation_operator)
 add_subdirectory(operators/ping_multiplier_operator)
 add_subdirectory(operators/ping_ops)
 add_subdirectory(operators/test_operator)
+add_subdirectory(operators/edge_detection_operator)
 add_subdirectory(app)
 
 

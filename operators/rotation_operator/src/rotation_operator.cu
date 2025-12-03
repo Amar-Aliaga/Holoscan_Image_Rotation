@@ -7,6 +7,7 @@
 #include <iostream>
 #include <3rdparty/dlpack/dlpack.h>
 
+
 using namespace holoscan;
 
 
@@ -79,17 +80,17 @@ void RotationOperator::compute(InputContext& op_input,
     // Source buffer
     uint8_t* src = static_cast<uint8_t*>(in_tensor->data());
 
-
     size_t bytes = static_cast<size_t>(H) * W * C;
 
     // allocate dst (same number of bytes)
     uint8_t* dst {nullptr};
     cudaMalloc(&dst, bytes);
     cudaMemcpy(dst, src, bytes, cudaMemcpyDeviceToDevice);
-
+    
     dim3 block(16, 16);
     dim3 grid((W + block.x - 1) / block.x, (H + block.y - 1) / block.y);
-    CudaRotate::rotate_180_kernel<<<grid, block>>>(dst, W, H, C);
+    RotationType rotation_type = RotationType::ROTATE_180;
+    launch_rotation_kernel(rotation_type, src, dst, W, H, C, grid, block);
     cudaDeviceSynchronize();
 
     // Create output entity and tensor — IMPORTANT: shape is {W, H, C}

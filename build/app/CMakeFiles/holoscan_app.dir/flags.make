@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DEIGEN_MPL2_ONLY -DFMT_HEADER_ONLY=1 -DRMM_LOG_ACTIVE_LEVEL=RAPIDS_LOGGER_LEVEL_INFO -DUCXX_ENABLE_RMM -DYAML_CPP_STATIC_DEFINE
 
-CXX_INCLUDES = -I/workspace/operators/rotation_operator/include -I/workspace/operators/ping_multiplier_operator/include -I/workspace/operators/ping_ops/include -I/workspace/operators/test_operator/include -I/workspace/expected/include -isystem /opt/nvidia/holoscan/include -isystem /opt/nvidia/holoscan/include/3rdparty -isystem /opt/nvidia/holoscan/include/gxf -isystem /usr/local/cuda/targets/x86_64-linux/include -isystem /opt/nvidia/holoscan/include/3rdparty/ucx -isystem /opt/nvidia/holoscan/include/3rdparty/ucxx -isystem /usr/local/ucx/include -isystem /usr/include/opencv4
+CXX_INCLUDES = -I/workspace/operators/rotation_operator/include -I/workspace/operators/ping_multiplier_operator/include -I/workspace/operators/ping_ops/include -I/workspace/operators/test_operator/include -I/workspace/operators/edge_detection_operator/include -I/workspace/expected/include -isystem /opt/nvidia/holoscan/include -isystem /opt/nvidia/holoscan/include/3rdparty -isystem /opt/nvidia/holoscan/include/gxf -isystem /usr/local/cuda/targets/x86_64-linux/include -isystem /opt/nvidia/holoscan/include/3rdparty/ucx -isystem /opt/nvidia/holoscan/include/3rdparty/ucxx -isystem /usr/local/ucx/include -isystem /usr/include/opencv4
 
 CXX_FLAGS = -std=gnu++20 -fPIE
 

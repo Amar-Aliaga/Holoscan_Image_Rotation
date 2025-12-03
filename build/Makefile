@@ -169,6 +169,19 @@ test_lib/fast:
 .PHONY : test_lib/fast
 
 #=============================================================================
+# Target rules for targets named edge_detection_lib
+
+# Build rule for target.
+edge_detection_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 edge_detection_lib
+.PHONY : edge_detection_lib
+
+# fast build rule for target.
+edge_detection_lib/fast:
+	$(MAKE) $(MAKESILENT) -f operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/build.make operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/build
+.PHONY : edge_detection_lib/fast
+
+#=============================================================================
 # Target rules for targets named holoscan_app
 
 # Build rule for target.
@@ -189,6 +202,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... edge_detection_lib"
 	@echo "... holoscan_app"
 	@echo "... pingMxOp_lib"
 	@echo "... pingOps_lib"

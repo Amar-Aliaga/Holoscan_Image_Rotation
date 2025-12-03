@@ -136,6 +136,7 @@ app/holoscan_app: operators/rotation_operator/librotationOp_lib.so
 app/holoscan_app: operators/ping_multiplier_operator/libpingMxOp_lib.so
 app/holoscan_app: operators/ping_ops/libpingOps_lib.so
 app/holoscan_app: operators/test_operator/libtest_lib.so
+app/holoscan_app: operators/edge_detection_operator/libedge_detection_lib.so
 app/holoscan_app: /opt/nvidia/holoscan/lib/libholoscan_viz.so.3.5.0
 app/holoscan_app: /usr/local/cuda/targets/x86_64-linux/lib/stubs/libcuda.so
 app/holoscan_app: /usr/local/cuda-12.8/targets/x86_64-linux/lib/libnppidei.so
@@ -177,6 +178,7 @@ app/holoscan_app: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.6.0
 app/holoscan_app: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.6.0
 app/holoscan_app: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 app/holoscan_app: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
+app/holoscan_app: /usr/local/cuda/targets/x86_64-linux/lib/stubs/libcuda.so
 app/holoscan_app: /usr/local/cuda/targets/x86_64-linux/lib/stubs/libcuda.so
 app/holoscan_app: /usr/local/cuda/targets/x86_64-linux/lib/stubs/libcuda.so
 app/holoscan_app: /usr/lib/x86_64-linux-gnu/librt.a

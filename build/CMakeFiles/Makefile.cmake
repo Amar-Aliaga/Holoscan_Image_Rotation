@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.29.2/CMakeCUDACompiler.cmake"
   "CMakeFiles/3.29.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.2/CMakeSystem.cmake"
+  "/workspace/operators/edge_detection_operator/CMakeLists.txt"
   "/workspace/operators/ping_multiplier_operator/CMakeLists.txt"
   "/workspace/operators/ping_ops/CMakeLists.txt"
   "/workspace/operators/rotation_operator/CMakeLists.txt"
@@ -71,6 +72,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "operators/ping_multiplier_operator/CMakeFiles/CMakeDirectoryInformation.cmake"
   "operators/ping_ops/CMakeFiles/CMakeDirectoryInformation.cmake"
   "operators/test_operator/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "operators/edge_detection_operator/CMakeFiles/CMakeDirectoryInformation.cmake"
   "app/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -80,5 +82,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "operators/ping_multiplier_operator/CMakeFiles/pingMxOp_lib.dir/DependInfo.cmake"
   "operators/ping_ops/CMakeFiles/pingOps_lib.dir/DependInfo.cmake"
   "operators/test_operator/CMakeFiles/test_lib.dir/DependInfo.cmake"
+  "operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/DependInfo.cmake"
   "app/CMakeFiles/holoscan_app.dir/DependInfo.cmake"
   )
