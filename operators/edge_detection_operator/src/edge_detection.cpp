@@ -72,14 +72,12 @@ void EdgeDetection::compute(holoscan::InputContext&  op_input,
     // 3) Launch CUDA kernel (use your own grid/block)
     dim3 block(32, 8);
     dim3 grid((W + block.x - 1) / block.x,
-            (H + block.y - 1) / block.y);
+              (H + block.y - 1) / block.y);
 
     int rgba_pitch = W * C; 
     int grey_pitch = W * 1; 
 
     launch_rgba_to_laplacian(src, dst, H, W, rgba_pitch, grey_pitch, grid, block);
-
-    cudaDeviceSynchronize();
 
     // 4) Wrap the CUDA output as a Holoscan tensor
     auto out_entity = holoscan::gxf::Entity::New(&context);
@@ -87,7 +85,17 @@ void EdgeDetection::compute(holoscan::InputContext&  op_input,
     // IMPORTANT: shape is H x W x 1  (single-channel)
     auto out_dl = make_dl_tensor_from_cuda(dst, H, W, 1);
 
-    auto out_tensor = std::make_shared<holoscan::Tensor>(out_dl);
+//    auto out_tensor = std::make_shared<holoscan::Tensor>(
+//     dst,   // GPU pointer
+//     H,     // height
+//     W,     // width
+//     1,     // channels
+//     holoscan::ArgElementType::kInt8,  // dtype
+//     /* device = */ 0                 // GPU device ID
+// );
+
+    
+    //auto out_tensor = std::make_shared<holoscan::Tensor>(out_dl);
     out_entity.add(out_tensor, "tensor");
 
     // 5) Emit

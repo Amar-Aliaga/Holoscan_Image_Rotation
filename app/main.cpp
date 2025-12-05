@@ -53,10 +53,23 @@ class CameraGPUDisplayApp : public holoscan::Application {
 
     auto edge = make_operator<EdgeDetection>("edge", from_config("binary_mask_value"));
 
-    add_flow(camera, format_converter,    {{"signal", "source_video"}});
-    add_flow(format_converter, viz,       {{"tensor", "receivers"}});
-    add_flow(format_converter, edge, {{"tensor", "in"}});
-    add_flow(edge, viz2,             {{"out",    "receivers"}});
+    // add_flow(camera, format_converter,    {{"signal", "source_video"}});
+    // add_flow(format_converter, viz,       {{"tensor", "receivers"}});
+    // add_flow(format_converter, edge, {{"tensor", "in"}});
+    // add_flow(edge, rotate_op, {{"out", "in"}});
+    // add_flow(rotate_op, viz2,             {{"out",    "receivers"}});
+
+    // add_flow(camera, format_converter,    {{"signal", "source_video"}});
+    // add_flow(format_converter, edge,      {{"tensor", "in"}});      // edge first
+    // add_flow(edge, rotate_op,             {{"out", "in"}});          // rotate depends on edge
+    // add_flow(rotate_op, viz2,                  {{"out", "receivers"}});   // optional, display edge output
+    // add_flow(format_converter, viz,       {{"tensor", "receivers"}}); 
+
+    add_flow(camera, format_converter);
+    add_flow(format_converter, rotate_op);
+    add_flow(rotate_op, edge);
+    add_flow(format_converter, viz, {{"tensor", "receivers"}});   // original window
+    add_flow(edge, viz2, {{"out", "receivers"}});  
   }
 };
 
