@@ -24,4 +24,8 @@ target_link_libraries(edge_detection_lib PRIVATE
     holoscan::ops::holoviz
     CUDA::cudart
     ${OpenCV_LIBS}
+    CUDA::nppc
+    CUDA::nppif
+    CUDA::nppig
+    CUDA::nppicc
 )

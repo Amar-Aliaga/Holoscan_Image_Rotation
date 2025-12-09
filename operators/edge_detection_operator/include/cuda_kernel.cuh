@@ -13,3 +13,4 @@ void launch_rgba_to_laplacian(const uint8_t* rgba, uint8_t* grey,
                               int rows, int cols,
                               int rgba_pitch, int grey_pitch,
                               dim3 grid, dim3 block);
+

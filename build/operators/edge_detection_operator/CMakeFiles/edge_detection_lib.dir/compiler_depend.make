@@ -171,6 +171,27 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/cuda_ker
   /usr/local/cuda/targets/x86_64-linux/include/driver_functions.h \
   /usr/local/cuda/targets/x86_64-linux/include/driver_types.h \
   /usr/local/cuda/targets/x86_64-linux/include/library_types.h \
+  /usr/local/cuda/targets/x86_64-linux/include/npp.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppcore.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppdefs.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_arithmetic_and_logical_operations.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_color_conversion.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_data_exchange_and_initialization.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_filtering_functions.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_geometry_transforms.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_linear_transforms.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_morphological_operations.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_statistics_functions.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_support_functions.h \
+  /usr/local/cuda/targets/x86_64-linux/include/nppi_threshold_and_compare_operations.h \
+  /usr/local/cuda/targets/x86_64-linux/include/npps.h \
+  /usr/local/cuda/targets/x86_64-linux/include/npps_arithmetic_and_logical_operations.h \
+  /usr/local/cuda/targets/x86_64-linux/include/npps_conversion_functions.h \
+  /usr/local/cuda/targets/x86_64-linux/include/npps_filtering_functions.h \
+  /usr/local/cuda/targets/x86_64-linux/include/npps_initialization.h \
+  /usr/local/cuda/targets/x86_64-linux/include/npps_statistics_functions.h \
+  /usr/local/cuda/targets/x86_64-linux/include/npps_support_functions.h \
   /usr/local/cuda/targets/x86_64-linux/include/sm_20_atomic_functions.h \
   /usr/local/cuda/targets/x86_64-linux/include/sm_20_atomic_functions.hpp \
   /usr/local/cuda/targets/x86_64-linux/include/sm_20_intrinsics.h \
@@ -1671,8 +1692,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda/targets/x86_64-linux/include/thrust/detail/config/compiler.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/thrust/detail/allocator_aware_execution_policy.h:
-
 /usr/local/cuda/targets/x86_64-linux/include/thrust/detail/advance.inl:
 
 /usr/local/cuda/targets/x86_64-linux/include/thrust/addressof.h:
@@ -1708,8 +1727,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/detail/libcxx/include/__assert:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/cstdlib:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/cstdint:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/concepts:
 
@@ -1879,45 +1896,45 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/aligned_storage.h:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/ptr.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_pointer.h:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/impl.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_lvalue_reference.h:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/detail/node.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_cv.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/detail/libcxx/include/complex:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_const.h:
 
-/opt/nvidia/holoscan/include/holoscan/core/fragment_service.hpp:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/vector_types.h:
 
-/usr/include/c++/13/bits/requires_hosted.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_pointer.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__concepts/convertible_to.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_types.h:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/detail/memory.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_extent.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/crt/sm_80_rt.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_trivial.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/version:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_size.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_const_ref.h:
+/usr/local/cuda/targets/x86_64-linux/include/thrust/iterator/iterator_facade.h:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/detail/impl.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/make_signed.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_like_ext.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_indices.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_element.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/make_tuple_types.h:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/convert.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__new/launder.h:
 
-/opt/nvidia/holoscan/include/yaml-cpp/mark.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_rvalue_reference.h:
 
-/opt/nvidia/holoscan/include/holoscan/core/gxf/entity.hpp:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__new/allocate.h:
 
-/usr/include/c++/13/typeinfo:
-
-/opt/nvidia/holoscan/include/yaml-cpp/emitterstyle.h:
-
-/opt/nvidia/holoscan/include/yaml-cpp/emittermanip.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__memory/voidify.h:
 
 /opt/nvidia/holoscan/include/yaml-cpp/dll.h:
 
@@ -1932,10 +1949,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__fwd/subrange.h:
 
 /opt/nvidia/holoscan/include/rmm/mr/device/cuda_async_view_memory_resource.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/detail/libcxx/include/cstring:
-
-/opt/nvidia/holoscan/include/rmm/detail/thrust_namespace.h:
 
 /opt/nvidia/holoscan/include/rmm/detail/logging_assert.hpp:
 
@@ -1957,8 +1970,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/holoscan/core/resources/gxf/ucx_receiver.hpp:
 
-/opt/nvidia/holoscan/include/holoscan/core/resources/gxf/cuda_allocator.hpp:
-
 /opt/nvidia/holoscan/include/holoscan/core/resources/gxf/std_entity_serializer.hpp:
 
 /usr/include/c++/13/vector:
@@ -1969,9 +1980,9 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/3rdparty/spdlog/common-inl.h:
 
-/opt/nvidia/holoscan/include/holoscan/core/resources/data_logger.hpp:
+/opt/nvidia/holoscan/include/holoscan/core/resources/gxf/cuda_allocator.hpp:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/parse.h:
+/opt/nvidia/holoscan/include/holoscan/core/resources/data_logger.hpp:
 
 /opt/nvidia/holoscan/include/holoscan/core/resources/async_data_logger.hpp:
 
@@ -1997,14 +2008,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/holoscan/core/messagelabel.hpp:
 
-/usr/local/cuda/targets/x86_64-linux/include/thrust/detail/preprocessor.h:
-
-/opt/nvidia/holoscan/include/holoscan/core/io_context.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_implicitly_default_constructible.h:
-
-/usr/include/c++/13/bits/align.h:
-
 /opt/nvidia/holoscan/include/holoscan/core/gxf/gxf_condition.hpp:
 
 /opt/nvidia/holoscan/include/holoscan/core/gxf/gxf_component_info.hpp:
@@ -2015,6 +2018,10 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/opencv4/opencv2/flann/flann_base.hpp:
 
+/opt/nvidia/holoscan/include/holoscan/core/gxf/entity.hpp:
+
+/usr/include/c++/13/typeinfo:
+
 /opt/nvidia/holoscan/include/holoscan/core/gxf/codec_registry.hpp:
 
 /usr/local/cuda/targets/x86_64-linux/include/thrust/system/cuda/detail/execution_policy.h:
@@ -2022,12 +2029,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /opt/nvidia/holoscan/include/holoscan/core/forward_def.hpp:
 
 /usr/include/alloca.h:
-
-/opt/nvidia/holoscan/include/holoscan/core/flow_tracking_annotation.hpp:
-
-/opt/nvidia/holoscan/include/holoscan/core/resources/gxf/ucx_serialization_buffer.hpp:
-
-/usr/include/opencv4/opencv2/core/cuda.inl.hpp:
 
 /opt/nvidia/holoscan/include/holoscan/core/extension_manager.hpp:
 
@@ -2061,15 +2062,13 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/holoscan/core/domain/tensor.hpp:
 
-/usr/include/opencv4/opencv2/core/bufferpool.hpp:
-
-/opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/periodic.hpp:
-
 /opt/nvidia/holoscan/include/gxf/ucx/ucx_transmitter.hpp:
 
 /opt/nvidia/holoscan/include/holoscan/core/executor.hpp:
 
 /opt/nvidia/holoscan/include/3rdparty/CLI/TypeTools.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/nppi_filtering_functions.h:
 
 /opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/multi_message_available.hpp:
 
@@ -2101,17 +2100,7 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/holoscan/core/app_worker.hpp:
 
-/usr/include/c++/13/new:
-
-/usr/local/cuda/targets/x86_64-linux/include/texture_types.h:
-
 /usr/include/x86_64-linux-gnu/bits/epoll.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_extent.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_trivial.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_size.h:
 
 /opt/nvidia/holoscan/include/gxf/ucx/ucx_receiver.hpp:
 
@@ -2179,8 +2168,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda/targets/x86_64-linux/include/sm_32_intrinsics.h:
 
-/opt/nvidia/holoscan/include/gxf/serialization/endpoint.hpp:
-
 /opt/nvidia/holoscan/include/gxf/serialization/component_serializer.hpp:
 
 /opt/nvidia/holoscan/include/gxf/rmm/rmm_allocator.hpp:
@@ -2199,19 +2186,11 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/gxf/cuda/cuda_event.hpp:
 
-/opt/nvidia/holoscan/include/gxf/ucx/ucx_entity_serializer.hpp:
-
-/opt/nvidia/holoscan/include/gxf/cuda/cuda_allocator.hpp:
-
 /opt/nvidia/holoscan/include/gxf/core/resource_manager.hpp:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__fwd/pair.h:
 
 /opt/nvidia/holoscan/include/rmm/logger.hpp:
-
-/opt/nvidia/holoscan/include/yaml-cpp/node/detail/node_data.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/thrust/type_traits/is_trivially_relocatable.h:
 
@@ -2228,12 +2207,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /opt/nvidia/holoscan/include/holoscan/core/gxf/gxf_operator.hpp:
 
 /opt/nvidia/holoscan/include/gxf/core/parameter_storage.hpp:
-
-/opt/nvidia/holoscan/include/gxf/core/parameter_registrar.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_all_extents.h:
-
-/usr/include/c++/13/bits/enable_special_members.h:
 
 /opt/nvidia/holoscan/include/gxf/core/parameter_parser.hpp:
 
@@ -2303,18 +2276,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/gxf/common/fixed_string.hpp:
 
-/opt/nvidia/holoscan/include/holoscan/core/cli_options.hpp:
-
-/opt/nvidia/holoscan/include/gxf/std/greedy_scheduler.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/crt/sm_100_rt.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/disjunction.h:
-
-/opt/nvidia/holoscan/include/gxf/common/byte.hpp:
-
-/usr/include/c++/13/bits/ios_base.h:
-
 /opt/nvidia/holoscan/include/gxf/std/resources.hpp:
 
 /opt/nvidia/holoscan/include/3rdparty/spdlog/details/fmt_helper.h:
@@ -2350,8 +2311,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /opt/nvidia/holoscan/include/holoscan/core/codecs.hpp:
 
 /opt/nvidia/holoscan/include/fmt/format.h:
-
-/opt/nvidia/holoscan/include/fmt/format-inl.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda_fp16.hpp:
 
@@ -2401,6 +2360,46 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/3rdparty/spdlog/version.h:
 
+/opt/nvidia/holoscan/include/holoscan/core/resources/gxf/receiver.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/sm_35_atomic_functions.h:
+
+/usr/include/c++/13/bits/atomic_wait.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/thrust/detail/raw_pointer_cast.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/details/backtracer.h:
+
+/usr/include/c++/13/span:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_scoped_enum.h:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/pattern_formatter-inl.h:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/logger.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/thrust/system/cpp/detail/execution_policy.h:
+
+/usr/include/c++/13/bits/stl_pair.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/crt/device_double_functions.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/fmt/fmt.h:
+
+/usr/include/c++/13/codecvt:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/details/registry-inl.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_trivially_move_constructible.h:
+
+/opt/nvidia/holoscan/include/holoscan/core/domain/map.hpp:
+
+/workspace/operators/edge_detection_operator/src/cuda_kernel.cu:
+
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
@@ -2439,9 +2438,29 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 
+/opt/nvidia/holoscan/include/gxf/core/parameter_registrar.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_all_extents.h:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/opt/nvidia/holoscan/include/holoscan/core/operator_spec.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/13/ios:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/sfinae_helpers.h:
+
+/opt/nvidia/holoscan/include/gxf/std/receiver.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/thrust/detail/preprocessor.h:
+
+/opt/nvidia/holoscan/include/holoscan/core/io_context.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_implicitly_default_constructible.h:
+
+/usr/include/c++/13/bits/align.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_convertible.h:
 
@@ -2452,12 +2471,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /opt/nvidia/holoscan/include/gxf/std/scheduler.hpp:
 
 /opt/nvidia/holoscan/include/3rdparty/CLI/StringTools.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/thrust/system/cpp/detail/execution_policy.h:
-
-/usr/include/c++/13/bits/stl_pair.h:
-
-/opt/nvidia/holoscan/include/3rdparty/spdlog/logger.h:
 
 /opt/nvidia/holoscan/include/rmm/detail/aligned.hpp:
 
@@ -2511,6 +2524,8 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
+/opt/nvidia/holoscan/include/3rdparty/spdlog/details/periodic_worker.h:
+
 /opt/nvidia/holoscan/include/holoscan/core/schedulers/gxf/greedy_scheduler.hpp:
 
 /usr/local/cuda/targets/x86_64-linux/include/vector_functions.hpp:
@@ -2539,6 +2554,8 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/c++/13/bits/valarray_after.h:
 
+/usr/local/cuda/targets/x86_64-linux/include/nppi_support_functions.h:
+
 /opt/nvidia/holoscan/include/gxf/cuda/cuda_stream_pool.hpp:
 
 /usr/include/c++/13/bits/std_abs.h:
@@ -2554,8 +2571,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_volatile.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__concepts/assignable.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_lvalue_reference.h:
 
 /opt/nvidia/holoscan/include/holoscan/core/scheduler.hpp:
 
@@ -2575,13 +2590,31 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /workspace/operators/edge_detection_operator/include/cuda_kernel.cuh:
 
+/usr/include/c++/13/cinttypes:
+
+/opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/expiring_message.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/crt/device_double_functions.h:
 
-/usr/include/time.h:
+/opt/nvidia/holoscan/include/fmt/format-inl.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_indices.h:
+/usr/local/cuda/targets/x86_64-linux/include/nppi_arithmetic_and_logical_operations.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/thrust/system/cuda/detail/swap_ranges.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__new/bad_alloc.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/time.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__utility/convert_to_integral.h:
 
@@ -2601,13 +2634,9 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/gxf/std/scheduling_condition.hpp:
 
-/opt/nvidia/holoscan/include/3rdparty/spdlog/details/synchronous_factory.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/cstdint:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/detail/iterator_fwd.h:
-
-/usr/include/c++/13/pstl/execution_defs.h:
-
-/usr/include/c++/13/bits/stl_algobase.h:
+/usr/local/cuda/targets/x86_64-linux/include/npps_arithmetic_and_logical_operations.h:
 
 /opt/nvidia/holoscan/include/3rdparty/spdlog/sinks/base_sink.h:
 
@@ -2619,17 +2648,29 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda/targets/x86_64-linux/include/crt/math_functions.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+/opt/nvidia/holoscan/include/holoscan/core/cli_options.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
+/opt/nvidia/holoscan/include/gxf/std/greedy_scheduler.hpp:
 
-/usr/local/cuda/targets/x86_64-linux/include/thrust/iterator/iterator_facade.h:
+/usr/local/cuda/targets/x86_64-linux/include/crt/sm_100_rt.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/make_signed.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/disjunction.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_like_ext.h:
+/opt/nvidia/holoscan/include/gxf/common/byte.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/socket.h:
+/usr/local/cuda/targets/x86_64-linux/include/nppi.h:
+
+/usr/include/c++/13/bits/ios_base.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/npps_filtering_functions.h:
+
+/opt/nvidia/holoscan/include/rmm/mr/device/per_device_resource.hpp:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/pattern_formatter.h:
+
+/usr/include/c++/13/bits/fs_path.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /opt/nvidia/holoscan/include/holoscan/core/resources/gxf/ucx_holoscan_component_serializer.hpp:
 
@@ -2645,9 +2686,11 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda/targets/x86_64-linux/include/sm_60_atomic_functions.hpp:
 
-/opt/nvidia/holoscan/include/3rdparty/spdlog/details/periodic_worker.h:
-
 /usr/include/c++/13/bits/concept_check.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/thrust/detail/allocator_aware_execution_policy.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/npps_conversion_functions.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/thrust/advance.h:
 
@@ -2701,6 +2744,12 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/gxf/std/dlpack_utils.hpp:
 
+/usr/local/cuda/targets/x86_64-linux/include/cub/detail/detect_cuda_runtime.cuh:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/details/periodic_worker-inl.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__cccl/diagnostic.h:
+
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/lazy.h:
 
 /opt/nvidia/holoscan/include/holoscan/core/dataflow_tracker.hpp:
@@ -2708,8 +2757,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
 /usr/include/c++/13/bits/exception.h:
-
-/opt/nvidia/holoscan/include/yaml-cpp/node/detail/node_iterator.h:
 
 /opt/nvidia/holoscan/include/gxf/common/expected.hpp:
 
@@ -2725,9 +2772,7 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/gxf/common/fixed_map.hpp:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/emit.h:
-
-/opt/nvidia/holoscan/include/gxf/std/gems/event_list/event_list.hpp:
+/opt/nvidia/holoscan/include/yaml-cpp/node/detail/iterator_fwd.h:
 
 /opt/nvidia/holoscan/include/3rdparty/spdlog/sinks/basic_file_sink-inl.h:
 
@@ -2754,14 +2799,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /opt/nvidia/holoscan/include/3rdparty/spdlog/details/log_msg.h:
 
 /usr/include/opencv4/opencv2/stitching/detail/camera.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/thrust/detail/tuple_transform.h:
-
-/opt/nvidia/holoscan/include/gxf/std/codelet.hpp:
-
-/opt/nvidia/holoscan/include/3rdparty/spdlog/sinks/sink.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /opt/nvidia/holoscan/include/holoscan/core/gxf/gxf_utils.hpp:
 
@@ -2791,6 +2828,12 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/c++/13/stdlib.h:
 
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/opencv4/opencv2/ml.hpp:
+
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/detail/libcxx/include/cstdlib:
 
 /opt/nvidia/holoscan/include/3rdparty/ucx/ucp/api/ucp_compat.h:
@@ -2803,6 +2846,12 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/c++/13/bits/basic_ios.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/structured_bindings.h:
+
+/usr/include/c++/13/tr1/poly_hermite.tcc:
+
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/nat.h:
 
 /opt/nvidia/holoscan/include/3rdparty/spdlog/details/registry.h:
@@ -2811,6 +2860,12 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda/targets/x86_64-linux/include/sm_20_intrinsics.h:
 
+/usr/include/c++/13/bits/functional_hash.h:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/logger-inl.h:
+
+/opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/cuda_event.hpp:
+
 /usr/include/c++/13/bits/stl_tree.h:
 
 /opt/nvidia/holoscan/include/holoscan/core/resources/gxf/system_resources.hpp:
@@ -2818,24 +2873,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/local/cuda/targets/x86_64-linux/include/crt/sm_70_rt.h:
 
 /opt/nvidia/holoscan/include/gxf/std/unbounded_allocator.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/sm_35_atomic_functions.h:
-
-/opt/nvidia/holoscan/include/holoscan/core/resources/gxf/receiver.hpp:
-
-/usr/include/c++/13/bits/atomic_wait.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/thrust/detail/raw_pointer_cast.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/opt/nvidia/holoscan/include/3rdparty/spdlog/details/backtracer.h:
-
-/usr/include/c++/13/span:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_scoped_enum.h:
-
-/opt/nvidia/holoscan/include/3rdparty/spdlog/pattern_formatter-inl.h:
 
 /usr/include/linux/limits.h:
 
@@ -2865,17 +2902,9 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda/targets/x86_64-linux/include/crt/sm_90_rt.h:
 
+/opt/nvidia/holoscan/include/3rdparty/spdlog/details/synchronous_factory.h:
+
 /usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/crt/device_double_functions.hpp:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/cuda_event.hpp:
-
-/opt/nvidia/holoscan/include/3rdparty/spdlog/logger-inl.h:
-
-/usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
 /usr/include/opencv4/opencv2/flann/kmeans_index.h:
 
@@ -2883,11 +2912,27 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/3rdparty/spdlog/fmt/bundled/core.h:
 
+/usr/include/c++/13/new:
+
+/usr/local/cuda/targets/x86_64-linux/include/texture_types.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/detail/libcxx/include/complex:
+
+/opt/nvidia/holoscan/include/holoscan/core/fragment_service.hpp:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/opt/nvidia/holoscan/include/yaml-cpp/node/detail/node.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__concepts/convertible_to.h:
+
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/libintl.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/npp.h:
 
 /usr/include/c++/13/bits/stl_stack.h:
 
@@ -2900,6 +2945,12 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/opt/nvidia/holoscan/include/yaml-cpp/node/ptr.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__utility/declval.h:
 
@@ -2919,13 +2970,15 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/13/deque:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_trivially_copy_constructible.h:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/details/os-inl.h:
+
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_volatile.h:
-
-/opt/nvidia/holoscan/include/3rdparty/CLI/impl/App_inl.hpp:
-
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
@@ -2937,11 +2990,9 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/holoscan/core/resources/gxf/condition_combiner.hpp:
 
-/opt/nvidia/holoscan/include/yaml-cpp/exceptions.h:
-
-/opt/nvidia/holoscan/include/yaml-cpp/node/node.h:
-
 /opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/multi_message_available_timeout.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/npps_support_functions.h:
 
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
@@ -2957,19 +3008,17 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__new_:
+
+/opt/nvidia/holoscan/include/gxf/common/iterator.hpp:
+
 /usr/include/c++/13/cstdint:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_trivially_move_constructible.h:
+/opt/nvidia/holoscan/include/gxf/serialization/endpoint.hpp:
 
-/opt/nvidia/holoscan/include/holoscan/core/domain/map.hpp:
+/usr/local/cuda/targets/x86_64-linux/include/nppdefs.h:
 
-/workspace/operators/edge_detection_operator/src/cuda_kernel.cu:
-
-/opt/nvidia/holoscan/include/3rdparty/spdlog/details/registry-inl.h:
-
-/opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/expiring_message.hpp:
-
-/usr/include/c++/13/cinttypes:
+/usr/include/c++/13/iterator:
 
 /opt/nvidia/holoscan/include/3rdparty/spdlog/common.h:
 
@@ -2992,6 +3041,24 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /opt/nvidia/holoscan/include/3rdparty/CLI/FormatterFwd.hpp:
+
+/usr/include/c++/13/initializer_list:
+
+/opt/nvidia/holoscan/include/holoscan/core/fragment.hpp:
+
+/opt/nvidia/holoscan/include/gxf/std/clock.hpp:
+
+/opt/nvidia/holoscan/include/holoscan/core/resources/gxf/std_component_serializer.hpp:
+
+/usr/include/sched.h:
+
+/opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/cuda_buffer_available.hpp:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/details/os.h:
+
+/opt/nvidia/holoscan/include/3rdparty/nvtx3/nvtxDetail/nvtxInitDecls.h:
+
+/usr/include/c++/13/string:
 
 /opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/asynchronous.hpp:
 
@@ -3026,6 +3093,8 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/nppi_morphological_operations.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/builtin_types.h:
 
@@ -3069,6 +3138,10 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/c++/13/memory:
 
+/usr/local/cuda/targets/x86_64-linux/include/crt/sm_80_rt.h:
+
+/opt/nvidia/holoscan/include/yaml-cpp/node/detail/memory.h:
+
 /opt/nvidia/holoscan/include/holoscan/core/io_spec.hpp:
 
 /usr/local/cuda/targets/x86_64-linux/include/sm_32_atomic_functions.h:
@@ -3087,33 +3160,15 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda_device_runtime_api.h:
 
-/opt/nvidia/holoscan/include/gxf/std/clock.hpp:
-
-/opt/nvidia/holoscan/include/holoscan/core/resources/gxf/std_component_serializer.hpp:
-
-/usr/include/c++/13/initializer_list:
-
-/opt/nvidia/holoscan/include/holoscan/core/fragment.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda_runtime_api.h:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/opencv4/opencv2/flann/composite_index.h:
-
-/opt/nvidia/holoscan/include/yaml-cpp/emitterdef.h:
+/usr/local/cuda/targets/x86_64-linux/include/nppi_threshold_and_compare_operations.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/device_atomic_functions.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/device_atomic_functions.hpp:
 
-/opt/nvidia/holoscan/include/holoscan/core/operator_spec.hpp:
-
 /opt/nvidia/holoscan/include/holoscan/core/condition.hpp:
 
 /opt/nvidia/holoscan/include/gxf/common/memory_utils.hpp:
-
-/usr/include/c++/13/iterator:
 
 /usr/include/opencv4/opencv2/flann/miniflann.hpp:
 
@@ -3124,6 +3179,56 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/driver_types.h:
+
+/opt/nvidia/holoscan/include/gxf/cuda/cuda_allocator.hpp:
+
+/opt/nvidia/holoscan/include/gxf/ucx/ucx_entity_serializer.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/detail/libcxx/include/cstring:
+
+/opt/nvidia/holoscan/include/rmm/detail/thrust_namespace.h:
+
+/opt/nvidia/holoscan/include/holoscan/core/flow_tracking_annotation.hpp:
+
+/opt/nvidia/holoscan/include/holoscan/core/resources/gxf/ucx_serialization_buffer.hpp:
+
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/nppi_color_conversion.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/nppi_data_exchange_and_initialization.h:
+
+/usr/include/opencv4/opencv2/flann.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__functional/binder2nd.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/nppi_geometry_transforms.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/thrust/detail/tuple_transform.h:
+
+/opt/nvidia/holoscan/include/gxf/std/codelet.hpp:
+
+/opt/nvidia/holoscan/include/3rdparty/spdlog/sinks/sink.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda_runtime_api.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/opencv4/opencv2/flann/composite_index.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_volatile.h:
+
+/opt/nvidia/holoscan/include/3rdparty/CLI/impl/App_inl.hpp:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/nppi_statistics_functions.h:
+
+/usr/include/opencv4/opencv2/core/bufferpool.hpp:
+
+/opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/periodic.hpp:
+
+/usr/local/cuda/targets/x86_64-linux/include/npps_statistics_functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -3201,6 +3306,10 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/3rdparty/nvtx3/nvtx3.hpp:
 
+/opt/nvidia/holoscan/include/3rdparty/CLI/impl/Validators_inl.hpp:
+
+/opt/nvidia/holoscan/include/3rdparty/nvtx3/nvtxDetail/nvtxImpl.h:
+
 /opt/nvidia/holoscan/include/fmt/core.h:
 
 /opt/nvidia/holoscan/include/3rdparty/nvtx3/nvtxDetail/nvtxInitDefs.h:
@@ -3208,10 +3317,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h:
-
-/opt/nvidia/holoscan/include/3rdparty/nvtx3/nvtxDetail/nvtxInitDecls.h:
-
-/usr/include/c++/13/string:
 
 /opt/nvidia/holoscan/include/3rdparty/nvtx3/nvtxDetail/nvtxLinkOnce.h:
 
@@ -3229,23 +3334,9 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/rmm/mr/device/detail/free_list.hpp:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/iterator.h:
-
-/opt/nvidia/holoscan/include/3rdparty/spdlog/sinks/basic_file_sink.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__functional/mem_fn.h:
-
 /opt/nvidia/holoscan/include/3rdparty/spdlog/details/console_globals.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__concepts/different_from.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/13/deque:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/is_trivially_copy_constructible.h:
-
-/opt/nvidia/holoscan/include/3rdparty/spdlog/details/os-inl.h:
 
 /opt/nvidia/holoscan/include/gxf/std/event_based_scheduler.hpp:
 
@@ -3259,47 +3350,57 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /opt/nvidia/holoscan/include/3rdparty/spdlog/details/null_mutex.h:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+/opt/nvidia/holoscan/include/yaml-cpp/emitterdef.h:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+/opt/nvidia/holoscan/include/yaml-cpp/emittermanip.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cub/detail/detect_cuda_runtime.cuh:
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
-/opt/nvidia/holoscan/include/3rdparty/spdlog/details/periodic_worker-inl.h:
+/opt/nvidia/holoscan/include/yaml-cpp/emitterstyle.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__cccl/diagnostic.h:
+/opt/nvidia/holoscan/include/yaml-cpp/mark.h:
 
-/opt/nvidia/holoscan/include/3rdparty/spdlog/fmt/fmt.h:
+/opt/nvidia/holoscan/include/yaml-cpp/node/convert.h:
 
-/usr/include/c++/13/codecvt:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/version:
 
-/opt/nvidia/holoscan/include/rmm/mr/device/per_device_resource.hpp:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_const_ref.h:
 
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+/opt/nvidia/holoscan/include/yaml-cpp/node/detail/impl.h:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/opencv4/opencv2/ml.hpp:
+/opt/nvidia/holoscan/include/yaml-cpp/node/detail/node_data.h:
 
-/usr/include/c++/13/ext/alloc_traits.h:
+/opt/nvidia/holoscan/include/yaml-cpp/node/detail/node_iterator.h:
 
-/opt/nvidia/holoscan/include/3rdparty/spdlog/pattern_formatter.h:
+/opt/nvidia/holoscan/include/gxf/std/gems/event_list/event_list.hpp:
 
-/usr/include/c++/13/bits/fs_path.h:
+/opt/nvidia/holoscan/include/yaml-cpp/node/emit.h:
 
-/opt/nvidia/holoscan/include/3rdparty/CLI/impl/Validators_inl.hpp:
+/opt/nvidia/holoscan/include/yaml-cpp/node/impl.h:
 
-/opt/nvidia/holoscan/include/3rdparty/nvtx3/nvtxDetail/nvtxImpl.h:
+/usr/include/c++/13/bits/stl_algobase.h:
 
-/usr/include/sched.h:
+/usr/include/c++/13/pstl/execution_defs.h:
 
-/opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/cuda_buffer_available.hpp:
+/opt/nvidia/holoscan/include/3rdparty/spdlog/sinks/basic_file_sink.h:
 
-/opt/nvidia/holoscan/include/3rdparty/spdlog/details/os.h:
+/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__functional/mem_fn.h:
+
+/opt/nvidia/holoscan/include/yaml-cpp/node/iterator.h:
+
+/opt/nvidia/holoscan/include/yaml-cpp/exceptions.h:
+
+/opt/nvidia/holoscan/include/yaml-cpp/node/node.h:
+
+/opt/nvidia/holoscan/include/yaml-cpp/node/parse.h:
 
 /opt/nvidia/holoscan/include/yaml-cpp/noexcept.h:
 
 /opt/nvidia/holoscan/include/yaml-cpp/null.h:
+
+/usr/local/cuda/targets/x86_64-linux/include/npps_initialization.h:
 
 /usr/include/x86_64-linux-gnu/bits/in.h:
 
@@ -3336,6 +3437,8 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/c++/13/atomic:
+
+/usr/local/cuda/targets/x86_64-linux/include/npps.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/sm_35_intrinsics.h:
 
@@ -3581,6 +3684,8 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
+/usr/local/cuda/targets/x86_64-linux/include/nppcore.h:
+
 /usr/include/c++/13/bits/fs_fwd.h:
 
 /usr/include/c++/13/bits/stl_construct.h:
@@ -3638,8 +3743,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/include/c++/13/regex:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/vector_types.h:
 
 /usr/include/c++/13/bits/unique_lock.h:
 
@@ -3831,17 +3934,11 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/include/opencv4/opencv2/calib3d.hpp:
 
-/opt/nvidia/holoscan/include/yaml-cpp/node/type.h:
-
 /usr/include/assert.h:
 
+/opt/nvidia/holoscan/include/yaml-cpp/node/type.h:
+
 /usr/include/opencv4/opencv2/core/affine.hpp:
-
-/usr/include/c++/13/tr1/poly_hermite.tcc:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/structured_bindings.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_element.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/cstddef:
 
@@ -3906,10 +4003,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/complex:
 
 /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
-
-/usr/include/opencv4/opencv2/flann.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__functional/binder2nd.h:
 
 /usr/include/opencv4/opencv2/flann/all_indices.h:
 
@@ -3978,10 +4071,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/opencv4/opencv2/objdetect/face.hpp:
-
-/opt/nvidia/holoscan/include/gxf/common/iterator.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__new_:
 
 /usr/include/opencv4/opencv2/opencv.hpp:
 
@@ -4115,10 +4204,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda-12.8/targets/x86_64-linux/include/cuda/std/__type_traits/is_same.h:
 
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_rvalue_reference.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__new/allocate.h:
-
 /usr/local/cuda/targets/x86_64-linux/include/cub/detail/type_traits.cuh:
 
 /opt/nvidia/holoscan/include/gxf/core/resource.hpp:
@@ -4197,6 +4282,8 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__concepts/derived_from.h:
 
+/usr/local/cuda/targets/x86_64-linux/include/nppi_linear_transforms.h:
+
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__concepts/destructible.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__concepts/equality_comparable.h:
@@ -4220,8 +4307,6 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__memory/construct_at.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__concepts/same_as.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__memory/voidify.h:
 
 /usr/local/cuda/targets/x86_64-linux/include/thrust/system/detail/generic/select_system_exists.h:
 
@@ -4310,25 +4395,3 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/edge_det
 /opt/nvidia/holoscan/include/holoscan/core/conditions/gxf/memory_available.hpp:
 
 /usr/local/cuda/targets/x86_64-linux/include/cuda/std/__memory/unique_ptr.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/thrust/system/cuda/detail/swap_ranges.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__new/bad_alloc.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__new/launder.h:
-
-/opt/nvidia/holoscan/include/gxf/std/receiver.hpp:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/sfinae_helpers.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/remove_pointer.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__tuple_dir/tuple_types.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_const.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_cv.h:
-
-/usr/local/cuda/targets/x86_64-linux/include/cuda/std/__type_traits/add_pointer.h:

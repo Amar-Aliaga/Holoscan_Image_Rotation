@@ -147,6 +147,10 @@ operators/edge_detection_operator/libedge_detection_lib.so: /usr/lib/x86_64-linu
 operators/edge_detection_operator/libedge_detection_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.6.0
 operators/edge_detection_operator/libedge_detection_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.6.0
 operators/edge_detection_operator/libedge_detection_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.6.0
+operators/edge_detection_operator/libedge_detection_lib.so: /usr/local/cuda-12.8/targets/x86_64-linux/lib/libnppc.so
+operators/edge_detection_operator/libedge_detection_lib.so: /usr/local/cuda-12.8/targets/x86_64-linux/lib/libnppif.so
+operators/edge_detection_operator/libedge_detection_lib.so: /usr/local/cuda-12.8/targets/x86_64-linux/lib/libnppig.so
+operators/edge_detection_operator/libedge_detection_lib.so: /usr/local/cuda-12.8/targets/x86_64-linux/lib/libnppicc.so
 operators/edge_detection_operator/libedge_detection_lib.so: /opt/nvidia/holoscan/lib/libholoscan_core.so.3.5.0
 operators/edge_detection_operator/libedge_detection_lib.so: /usr/local/cuda-12.8/targets/x86_64-linux/lib/libcudart.so
 operators/edge_detection_operator/libedge_detection_lib.so: /opt/nvidia/holoscan/lib/libholoscan_profiler.so.3.5.0
@@ -185,6 +189,7 @@ operators/edge_detection_operator/libedge_detection_lib.so: /usr/lib/x86_64-linu
 operators/edge_detection_operator/libedge_detection_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.6.0
 operators/edge_detection_operator/libedge_detection_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 operators/edge_detection_operator/libedge_detection_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
+operators/edge_detection_operator/libedge_detection_lib.so: /usr/local/cuda-12.8/targets/x86_64-linux/lib/libnppc.so
 operators/edge_detection_operator/libedge_detection_lib.so: operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libedge_detection_lib.so"
 	cd /workspace/build/operators/edge_detection_operator && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/edge_detection_lib.dir/link.txt --verbose=$(VERBOSE)

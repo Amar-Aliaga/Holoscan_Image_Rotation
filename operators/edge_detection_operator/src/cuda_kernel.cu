@@ -1,6 +1,9 @@
 #include "cuda_kernel.cuh"
 #include <cuda_runtime.h>
 #include <cstdint>
+#include <npp.h>             
+#include <nppcore.h>     
+#include <nppi.h>  
 
 
 __global__ void rgba_to_laplacian(

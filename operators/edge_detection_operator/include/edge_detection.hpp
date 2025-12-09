@@ -1,6 +1,7 @@
 #pragma once
 
 #include <holoscan/holoscan.hpp>
+#include <memory>
 
 
 class EdgeDetection : public holoscan::Operator {
@@ -8,9 +9,11 @@ class EdgeDetection : public holoscan::Operator {
         HOLOSCAN_OPERATOR_FORWARD_ARGS(EdgeDetection)
         EdgeDetection() = default;
 
-        void setup(holoscan::OperatorSpec &spec) override;
-        void compute([[maybe_unused]]holoscan::InputContext &op_input, [[maybe_unused]]holoscan::OutputContext &op_output, [[maybe_unused]]holoscan::ExecutionContext &context) override;
-    
+        [[maybe_unused]] void setup(holoscan::OperatorSpec &spec) override;
+        [[maybe_unused]] void compute([[maybe_unused]]holoscan::InputContext &op_input, [[maybe_unused]]holoscan::OutputContext &op_output, [[maybe_unused]]holoscan::ExecutionContext &context) override;
+        //[[maybe_unused]]void initialize() override;
     private:
         holoscan::Parameter<double> threshold_;
+        holoscan::Parameter<std::shared_ptr<holoscan::Allocator>> allocator_;
+        std::unique_ptr<nvidia::gxf::MemoryBuffer> mem_buffer_;
 };

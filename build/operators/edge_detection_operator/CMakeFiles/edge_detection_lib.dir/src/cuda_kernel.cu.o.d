@@ -191,4 +191,25 @@ operators/edge_detection_operator/CMakeFiles/edge_detection_lib.dir/src/cuda_ker
     /usr/include/stdint.h \
     /usr/include/x86_64-linux-gnu/bits/wchar.h \
     /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-    /usr/include/x86_64-linux-gnu/bits/stdint-least.h
+    /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+    /usr/local/cuda/targets/x86_64-linux/include/npp.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppdefs.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppcore.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_support_functions.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_data_exchange_and_initialization.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_arithmetic_and_logical_operations.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_color_conversion.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_threshold_and_compare_operations.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_morphological_operations.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_filtering_functions.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_statistics_functions.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_linear_transforms.h \
+    /usr/local/cuda/targets/x86_64-linux/include/nppi_geometry_transforms.h \
+    /usr/local/cuda/targets/x86_64-linux/include/npps.h \
+    /usr/local/cuda/targets/x86_64-linux/include/npps_support_functions.h \
+    /usr/local/cuda/targets/x86_64-linux/include/npps_initialization.h \
+    /usr/local/cuda/targets/x86_64-linux/include/npps_conversion_functions.h \
+    /usr/local/cuda/targets/x86_64-linux/include/npps_arithmetic_and_logical_operations.h \
+    /usr/local/cuda/targets/x86_64-linux/include/npps_statistics_functions.h \
+    /usr/local/cuda/targets/x86_64-linux/include/npps_filtering_functions.h

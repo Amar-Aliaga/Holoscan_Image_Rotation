@@ -24,6 +24,8 @@ class CameraGPUDisplayApp : public holoscan::Application {
     auto device_alloc = make_resource<UnboundedAllocator>("device_allocator");
     auto stream_pool  = make_resource<CudaStreamPool>("cuda_stream_pool", Arg("dev_id") = 0);
 
+    auto edge_allocator = make_resource<UnboundedAllocator>("edge_allocator");
+
     auto camera = make_operator<ops::V4L2VideoCaptureOp>("camera",
         from_config("camera"),
         Arg("allocator") = host_alloc);
@@ -51,7 +53,8 @@ class CameraGPUDisplayApp : public holoscan::Application {
     auto rotate_op = make_operator<RotationOperator>("rotate",
         Arg("allocator") = device_alloc);
 
-    auto edge = make_operator<EdgeDetection>("edge", from_config("binary_mask_value"));
+    auto edge = make_operator<EdgeDetection>("edge", from_config("binary_mask_value"),
+                Arg("allocator") = edge_allocator);
 
     // add_flow(camera, format_converter,    {{"signal", "source_video"}});
     // add_flow(format_converter, viz,       {{"tensor", "receivers"}});
@@ -67,9 +70,9 @@ class CameraGPUDisplayApp : public holoscan::Application {
 
     add_flow(camera, format_converter);
     add_flow(format_converter, rotate_op);
-    add_flow(rotate_op, edge);
+    //add_flow(rotate_op, edge);
     add_flow(format_converter, viz, {{"tensor", "receivers"}});   // original window
-    add_flow(edge, viz2, {{"out", "receivers"}});  
+    add_flow(rotate_op, viz2, {{"out", "receivers"}});  
   }
 };
 
@@ -130,3 +133,5 @@ int main(int argc, char** argv) {
 
   return 0;
 }
+
+// perdorni allocator. Mos perdorni cudaMalloc
