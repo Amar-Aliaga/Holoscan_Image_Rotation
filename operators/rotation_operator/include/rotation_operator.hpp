@@ -3,6 +3,7 @@
 #include <holoscan/holoscan.hpp>
 #include <cuda_runtime.h>
 #include <3rdparty/dlpack/dlpack.h>
+#include <memory>
 
 
 DLManagedTensor* make_tensor_from_cuda(uint8_t* data, int H, int W, int C); 
@@ -19,11 +20,17 @@ class RotationOperator : public holoscan::Operator {
   HOLOSCAN_OPERATOR_FORWARD_ARGS(RotationOperator)
 
   void setup(holoscan::OperatorSpec& spec) override;
+  void initialize() override;
   void compute(holoscan::InputContext& op_input,
                holoscan::OutputContext& op_output,
                holoscan::ExecutionContext& context) override;
-
-  holoscan::Parameter<std::shared_ptr<holoscan::Allocator>> allocator_;
+  void stop() override;
+               
+  private:
+    uint8_t* dst {nullptr};
+    holoscan::Parameter<std::shared_ptr<holoscan::Allocator>> allocator_;
+    std::unique_ptr<nvidia::gxf::MemoryBuffer> memory_buffer_;
+    size_t bytes = 480 * 640;
 
   int rotation_mode_ = 0;
 

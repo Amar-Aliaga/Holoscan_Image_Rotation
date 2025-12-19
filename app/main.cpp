@@ -20,15 +20,19 @@ class CameraGPUDisplayApp : public holoscan::Application {
   void compose() override {
     using namespace holoscan;
 
+    // auto allocator = make_resource<UnboundedAllocator>("allocator", 
+    //             Arg("memory_type") = "cuda");
     auto host_alloc   = make_resource<UnboundedAllocator>("host_allocator");
-    auto device_alloc = make_resource<UnboundedAllocator>("device_allocator");
+    auto device_alloc = make_resource<UnboundedAllocator>("device_allocator",
+        Arg("memory_type") = "cuda");
+    auto test_alloc   = make_resource<UnboundedAllocator>("test_allocator");
     auto stream_pool  = make_resource<CudaStreamPool>("cuda_stream_pool", Arg("dev_id") = 0);
 
     auto edge_allocator = make_resource<UnboundedAllocator>("edge_allocator");
 
     auto camera = make_operator<ops::V4L2VideoCaptureOp>("camera",
         from_config("camera"),
-        Arg("allocator") = host_alloc);
+        Arg("allocator") = device_alloc);
 
     auto format_converter = make_operator<ops::FormatConverterOp>("format_converter",
         from_config("format_converter"),
@@ -51,10 +55,10 @@ class CameraGPUDisplayApp : public holoscan::Application {
     this->scheduler(multithread_sched);
 
     auto rotate_op = make_operator<RotationOperator>("rotate",
-        Arg("allocator") = device_alloc);
+        Arg("allocator") = test_alloc);
 
-    auto edge = make_operator<EdgeDetection>("edge", from_config("binary_mask_value"),
-                Arg("allocator") = edge_allocator);
+    auto edge = make_operator<EdgeDetection>("edge",
+        Arg("allocator") = device_alloc);
 
     // add_flow(camera, format_converter,    {{"signal", "source_video"}});
     // add_flow(format_converter, viz,       {{"tensor", "receivers"}});
@@ -62,17 +66,17 @@ class CameraGPUDisplayApp : public holoscan::Application {
     // add_flow(edge, rotate_op, {{"out", "in"}});
     // add_flow(rotate_op, viz2,             {{"out",    "receivers"}});
 
-    // add_flow(camera, format_converter,    {{"signal", "source_video"}});
-    // add_flow(format_converter, edge,      {{"tensor", "in"}});      // edge first
-    // add_flow(edge, rotate_op,             {{"out", "in"}});          // rotate depends on edge
-    // add_flow(rotate_op, viz2,                  {{"out", "receivers"}});   // optional, display edge output
-    // add_flow(format_converter, viz,       {{"tensor", "receivers"}}); 
+    add_flow(camera, format_converter,    {{"signal", "source_video"}});
+    add_flow(format_converter, edge,      {{"tensor", "in"}});      // edge first
+    add_flow(edge, rotate_op,             {{"out", "in"}});          // rotate depends on edge
+    add_flow(rotate_op, viz2,                  {{"out", "receivers"}});   // optional, display edge output
+    add_flow(format_converter, viz,       {{"tensor", "receivers"}}); 
 
-    add_flow(camera, format_converter);
-    add_flow(format_converter, rotate_op);
-    //add_flow(rotate_op, edge);
-    add_flow(format_converter, viz, {{"tensor", "receivers"}});   // original window
-    add_flow(rotate_op, viz2, {{"out", "receivers"}});  
+    // add_flow(camera, format_converter, {{"signal", "source_video"}});
+    // //add_flow(rotate_op, edge);
+    // add_flow(format_converter, viz, {{"tensor", "receivers"}});   // original window
+    // add_flow(format_converter, edge, {{"tensor", "in"}});
+    // add_flow(edge, viz2, {{"out", "receivers"}});  
   }
 };
 
@@ -105,8 +109,8 @@ class MyOp1 : public holoscan::Application {
 class Edge : public holoscan::Application {
     public:
         void compose() override {
-            auto edge = make_operator<EdgeDetection>("edge", from_config("binary_mask_value"));
-            add_operator(edge);
+            // auto edge = make_operator<EdgeDetection>("edge", from_config("binary_mask_value"));
+            // add_operator(edge);
         }
 };
 

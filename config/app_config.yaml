@@ -20,7 +20,6 @@ holoviz2:
   window_title: Rotated Window
 
 m_scheduler:
-  name: "multithread"
   worker_thread_number: 2 
 
 rotation_operator:

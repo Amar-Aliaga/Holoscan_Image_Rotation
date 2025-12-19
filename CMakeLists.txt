@@ -18,7 +18,8 @@ add_subdirectory(app)
 # sudo docker run --rm -it --gpus all \
 #   --device /dev/video0 \
 #   -e DISPLAY=$DISPLAY \
+#   -e XDG_RUNTIME_DIR=/run/user/1000 \
 #   -v /tmp/.X11-unix:/tmp/.X11-unix \
 #   -v /opt/nvidia/holoscan:/opt/nvidia/holoscan \
 #   -v /home/amar-aliaga/holoscan/first_holoscan_program:/workspace \
-#   my-holoscan-app
+#   my-holoscan-app 

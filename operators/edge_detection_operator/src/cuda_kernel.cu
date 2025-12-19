@@ -49,7 +49,7 @@ __global__ void rgba_to_laplacian(
 void launch_rgba_to_laplacian(const uint8_t* rgba, uint8_t* out,
                                        int rows, int cols,
                                        int rgba_pitch, int out_pitch,
+                                       cudaStream_t stream,
                                        dim3 grid, dim3 block) {
-    rgba_to_laplacian<<<grid, block>>>(rgba, out, rows, cols, rgba_pitch, out_pitch);
-    cudaDeviceSynchronize();  // or use streams for async
+    rgba_to_laplacian<<<grid, block, 0, stream>>>(rgba, out, rows, cols, rgba_pitch, out_pitch);
 }
