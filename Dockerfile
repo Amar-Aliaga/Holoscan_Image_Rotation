@@ -21,9 +21,9 @@ RUN apt update && apt install -y \
 
 # Install CMake version 3.29.2
 RUN cd /tmp && \
-    wget https://github.com/Kitware/CMake/releases/download/v3.29.2/cmake-3.29.2.tar.gz && \
-    tar -xzf cmake-3.29.2.tar.gz && \
-    cd cmake-3.29.2 && \
+    wget https://github.com/Kitware/CMake/releases/download/v3.30.4/cmake-3.30.4.tar.gz && \
+    tar -xzf cmake-3.30.4.tar.gz && \
+    cd cmake-3.30.4 && \
     ./bootstrap && \
     make -j$(nproc) && \
     make install

@@ -12,6 +12,7 @@ add_subdirectory(operators/ping_multiplier_operator)
 add_subdirectory(operators/ping_ops)
 add_subdirectory(operators/test_operator)
 add_subdirectory(operators/edge_detection_operator)
+add_subdirectory(operators/blur_operator)
 add_subdirectory(app)
 
 

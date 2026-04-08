@@ -4,6 +4,7 @@
 #include "PingRxOp.hpp"
 #include "test.hpp"
 #include "edge_detection.hpp"
+#include "blur.hpp"
 
 #include <holoscan/holoscan.hpp>
 #include <holoscan/operators/v4l2_video_capture/v4l2_video_capture.hpp>
@@ -57,7 +58,7 @@ class CameraGPUDisplayApp : public holoscan::Application {
     auto rotate_op = make_operator<RotationOperator>("rotate",
         Arg("allocator") = test_alloc);
 
-    auto edge = make_operator<EdgeDetection>("edge",
+    auto edge = make_operator<Blur>("edge",
         Arg("allocator") = device_alloc);
 
     // add_flow(camera, format_converter,    {{"signal", "source_video"}});
@@ -68,8 +69,8 @@ class CameraGPUDisplayApp : public holoscan::Application {
 
     add_flow(camera, format_converter,    {{"signal", "source_video"}});
     add_flow(format_converter, edge,      {{"tensor", "in"}});      // edge first
-    add_flow(edge, rotate_op,             {{"out", "in"}});          // rotate depends on edge
-    add_flow(rotate_op, viz2,                  {{"out", "receivers"}});   // optional, display edge output
+    //add_flow(edge, rotate_op,             {{"out", "in"}});          // rotate depends on edge
+    add_flow(edge, viz2,                  {{"out", "receivers"}});   // optional, display edge output
     add_flow(format_converter, viz,       {{"tensor", "receivers"}}); 
 
     // add_flow(camera, format_converter, {{"signal", "source_video"}});
@@ -113,6 +114,8 @@ class Edge : public holoscan::Application {
             // add_operator(edge);
         }
 };
+
+
 
 
 int main(int argc, char** argv) {

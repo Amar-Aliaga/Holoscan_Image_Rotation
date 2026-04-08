@@ -1,0 +1,1 @@
+  -L"/usr/local/cuda/targets/x86_64-linux/lib"  -lHoloscan::holoscan  -ldl "/usr/lib/x86_64-linux-gnu/librt.a" -lcudadevrt -lcudart_static -lrt -lpthread 
